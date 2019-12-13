@@ -1,6 +1,7 @@
 ﻿using DziennikSportowca.Common.MappingProfiles;
 using DziennikSportowca.Common.Models.Settings;
 using DziennikSportowca.EntityFramework.Data;
+using DziennikSportowca.EntityFramework.Data.MappingProfiles;
 using DziennikSportowca.EntityFramework.Services;
 using DziennikSportowca.Interfaces.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -44,7 +45,7 @@ namespace DziennikSportowca
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggingBuilder loggingBuilder)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -56,8 +57,8 @@ namespace DziennikSportowca
                 app.UseHsts();
             }
 
-            loggingBuilder.AddConsole();
-            loggingBuilder.AddDebug();
+            //loggingBuilder.AddConsole();
+            //loggingBuilder.AddDebug();
 
             // global cors policy
             app.UseCors(x => x
@@ -77,6 +78,7 @@ namespace DziennikSportowca
             var autoMapperConfig = new AutoMapper.MapperConfiguration(cfg =>
             {
                 cfg.AddProfile<UserProfile>();
+                cfg.AddProfile<UserMappingProfile>(); 
             });
 
             var autoMapper = autoMapperConfig.CreateMapper();

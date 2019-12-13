@@ -32,6 +32,7 @@ namespace DziennikSportowca.Controllers.Api
             IOptions<AppSettings> appSettings): base(mapper)
         {
             _appSettings = appSettings.Value;
+            _userSrv = userService;
         }
 
         [AllowAnonymous]

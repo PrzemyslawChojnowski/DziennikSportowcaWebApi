@@ -1,0 +1,76 @@
+const labels = {
+    logout: "Wyloguj",
+    appName: "Dziennik Sportowca",
+    login: "Zaloguj",
+    register: "Zarejestruj",
+    password: "Hasło",
+    userName: "Nazwa użytkownika",
+    firstName: "Imię",
+    lastName: "Nazwisko",
+    calculators: "Kalkulatory",
+    bmi: "BMI",
+    cpm: "CPM",
+    pmc: "PMC",
+    ppm: "PPM",
+    height: "Wzrost",
+    weight: "Waga",
+
+    DziennikSportowca: "DziennikSportowca",
+    ExerciseId: "ID ćwiczenia",
+    ID: "ID",
+    Index: "#",
+    ExerciseName: "Nazwa ćwiczenia",
+    ActivityType: "Typ aktywności",
+    StrengthExercises: "Ćwiczenia siłowe",
+    CardioExercises: "Ćwiczenia cardio",
+    GroupExercises: "Ćwiczenia grupowe",
+    Menu: "Menu",
+    PPM: "PPM",
+    CPM: "CPM",
+    BMI: "BMI",
+    PMC: "PMC",
+    Weight: "Waga",
+    Height: "Wzrost",
+    Gender: "Płeć",
+    Age: "Wiek",
+    Man: "Mężczyzna",
+    Woman: "Kobieta",
+    PatientLayingInBed: "Pacjent leżący w łóżku",
+    LowActivity: "Niska aktywność fizyczna",
+    MediumActivity: "Umiarkowana aktywność fizyczna",
+    BigActivity: "Aktywny tryb życia",
+    VeryBigActivity: "Bardzo aktywny tryb życia",
+    ExtremeActivity: "Wyczynowe uprawianie sportu",
+    Home: "Strona domowa",
+    ExerciseList: "Lista ćwiczeń",
+    Calculators: "Kalkulatory",
+    Contact: "Kontakt",
+    MessageDescription: "Treść wiadomości",
+    PhoneNumber: "Numer telefonu",
+    Email: "E-mail",
+    NameAndSurname: "Imię i nazwisko",
+    Action: "Akcja",
+    Details: "Szczegóły",
+    Edit: "Edycja",
+    TrainingPlans: "Plany treningowe",
+    Delete: "Usuń",
+    TrainingPlanName: "Nazwa planu treningowego",
+    ExerciseType: "Rodzaj ćwiczenia",
+    AddingExercise: "Dodawanie ćwiczenia",
+    newExercise: "Nowe ćwiczenie",
+    Exercises: "Ćwiczenia",
+    ExerciseList: "Lista",
+    FoodProducts: "Produkty żywieniowe",
+    List: "Lista"
+};
+
+const buttons = {};
+
+const fields = {
+    SelectAValue: "Wybierz wartość",
+    TypeAValue: "Wprowadź wartość"
+};
+
+const langs = { labels, buttons, fields };
+
+export default langs;

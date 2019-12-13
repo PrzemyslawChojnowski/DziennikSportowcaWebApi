@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DziennikSportowca.Controllers
@@ -12,6 +13,7 @@ namespace DziennikSportowca.Controllers
             _mapper = mapper;
         }
 
+        [AllowAnonymous]
         [HttpGet("ping")]
         public IActionResult Index()
         {

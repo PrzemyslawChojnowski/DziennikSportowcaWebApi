@@ -19,4 +19,8 @@
     <ProjectReference Include="..\DziennikSportowca.Interfaces.Services\DziennikSportowca.Interfaces.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="app\" />
+  </ItemGroup>
+
 </Project>

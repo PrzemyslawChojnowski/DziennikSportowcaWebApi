@@ -11,8 +11,10 @@ namespace DziennikSportowca.Common.MappingProfiles
     {
         public UserProfile()
         {
-            CreateMap<UserVM, User>();
-            CreateMap<User, UserVM>();
+            CreateMap<User, UserVM>()
+                .ReverseMap()
+                .ForMember(d => d.PasswordHash, e => e.Ignore())
+                .ForMember(d => d.PasswordSalt, e => e.Ignore());
         }
     }
 }

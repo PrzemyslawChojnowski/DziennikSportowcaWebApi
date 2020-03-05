@@ -9,7 +9,7 @@
     "start": "webpack-dev-server --open"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "history": "^4.6.3",
     "lodash": "^4.17.11",
     "prop-types": "^15.6.2",

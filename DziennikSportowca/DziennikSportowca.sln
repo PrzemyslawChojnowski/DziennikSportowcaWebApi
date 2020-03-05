@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.757
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DziennikSportowca", "DziennikSportowca\DziennikSportowca.csproj", "{0C9E91D7-D725-44FC-8DAA-569CC49574F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DziennikSportowca", "DziennikSportowca\DziennikSportowca.csproj", "{0C9E91D7-D725-44FC-8DAA-569CC49574F7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{894AD776-227A-44C8-A532-96E3CDDC36F5}"
 EndProject
@@ -13,15 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Facades", "Facades", "{87B6BD8E-88B1-40A3-A041-6EBE8D4899DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DziennikSportowca.Facades", "DziennikSportowca.Facades\DziennikSportowca.Facades.csproj", "{16153190-841E-4284-B6FD-8A19386F6EB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DziennikSportowca.Facades", "DziennikSportowca.Facades\DziennikSportowca.Facades.csproj", "{16153190-841E-4284-B6FD-8A19386F6EB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DziennikSportowca.Interfaces.Facades", "DziennikSportowca.Interfaces.Facades\DziennikSportowca.Interfaces.Facades.csproj", "{0DD46478-29ED-4F7A-861B-9B18081AAC05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DziennikSportowca.Interfaces.Facades", "DziennikSportowca.Interfaces.Facades\DziennikSportowca.Interfaces.Facades.csproj", "{0DD46478-29ED-4F7A-861B-9B18081AAC05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DziennikSportowca.Interfaces.Services", "DziennikSportowca.Interfaces.Services\DziennikSportowca.Interfaces.Services.csproj", "{98555FCF-1E20-4D95-AFBF-8C18CBFC6302}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DziennikSportowca.Interfaces.Services", "DziennikSportowca.Interfaces.Services\DziennikSportowca.Interfaces.Services.csproj", "{98555FCF-1E20-4D95-AFBF-8C18CBFC6302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DziennikSportowca.EntityFramework", "DziennikSportowca.EntityFramework\DziennikSportowca.EntityFramework.csproj", "{6C2A703F-0DE9-4238-AA44-71B9CEA19B5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DziennikSportowca.EntityFramework", "DziennikSportowca.EntityFramework\DziennikSportowca.EntityFramework.csproj", "{6C2A703F-0DE9-4238-AA44-71B9CEA19B5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DziennikSportowca.Common", "DziennikSportowca.Common\DziennikSportowca.Common.csproj", "{46748538-9E1E-44B9-9BF7-7C9D7E41E8A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DziennikSportowca.Common", "DziennikSportowca.Common\DziennikSportowca.Common.csproj", "{46748538-9E1E-44B9-9BF7-7C9D7E41E8A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -16,8 +16,20 @@ namespace DziennikSportowca.EntityFramework.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+
+            //builder.Entity<tDictionary>()
+            //    .HasMany(d => d.DictionaryItems)
+            //    .WithOne(i => i.Dictionary);
+            builder.Entity<tDictionary>().ToTable("tDictionaries");
+            builder.Entity<tDictionaryItem>().ToTable("tDictionaryItems");
         }
 
+        public DbSet<tDictionary> tDictionaries { get; set; }
+        public DbSet<tDictionaryItem> tDictionaryItems { get; set; }
+        public DbSet<tDictionaryItemName> tDictionaryItemNames { get; set; }
+
         public DbSet<tUser> tUsers { get; set; }
+        
+        public DbSet<tExercise> tExercises { get; set; }
     }
 }

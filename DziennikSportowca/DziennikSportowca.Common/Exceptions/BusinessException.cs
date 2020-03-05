@@ -11,7 +11,7 @@ namespace DziennikSportowca.Common.Exceptions
 
     public class BusinessException : Exception
     {
-        public string Message { get; set; }
+        public new string Message { get; set; }
         public BusinessExceptionType Type { get; set; }
 
         public BusinessException() : base()

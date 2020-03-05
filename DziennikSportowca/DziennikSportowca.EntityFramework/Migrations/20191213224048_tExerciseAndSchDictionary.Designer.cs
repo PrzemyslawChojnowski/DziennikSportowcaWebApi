@@ -4,14 +4,16 @@ using DziennikSportowca.EntityFramework.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DziennikSportowca.EntityFramework.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class DbContextModelSnapshot : ModelSnapshot
+    [Migration("20191213224048_tExerciseAndSchDictionary")]
+    partial class tExerciseAndSchDictionary
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

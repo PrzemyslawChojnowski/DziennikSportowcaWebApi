@@ -1,4 +1,5 @@
-﻿using DziennikSportowca.Common.MappingProfiles;
+﻿using DziennikSportowca.AppStart;
+using DziennikSportowca.Common.MappingProfiles;
 using DziennikSportowca.Common.Models.Settings;
 using DziennikSportowca.EntityFramework.Data;
 using DziennikSportowca.EntityFramework.Data.MappingProfiles;
@@ -36,19 +37,16 @@ namespace DziennikSportowca
                 mvc.EnableEndpointRouting = false;
             }).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             
-            //DbContext
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DziennikSportowca"))); ;
-
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DziennikSportowca")));
             services.AddCors();
             services.AddMvc();
 
             ConfigureAutoMapper(services);
             ConfigureJwt(services);
+            ConfigureApplicationFacades(services);
             ConfigureApplicationServices(services);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -61,30 +59,19 @@ namespace DziennikSportowca
                 app.UseHsts();
             }
 
-            //loggingBuilder.AddConsole();
-            //loggingBuilder.AddDebug();
-
-            // global cors policy
             app.UseCors(x => x
                 .AllowAnyOrigin()
                 .AllowAnyMethod()
                 .AllowAnyHeader()
                 .AllowCredentials());
-
             app.UseAuthentication();
-
             app.UseHttpsRedirection();
             app.UseMvc();
         }
 
         private void ConfigureAutoMapper(IServiceCollection services)
         {
-            var autoMapperConfig = new AutoMapper.MapperConfiguration(cfg =>
-            {
-                cfg.AddProfile<UserProfile>();
-                cfg.AddProfile<UserMappingProfile>(); 
-            });
-
+            var autoMapperConfig = new AutoMapper.MapperConfiguration(AutoMapperConfiguration.ConfigureMappings);
             var autoMapper = autoMapperConfig.CreateMapper();
 
             services.AddSingleton(autoMapper);
@@ -99,6 +86,7 @@ namespace DziennikSportowca
             // configure jwt authentication
             var appSettings = appSettingsSection.Get<AppSettings>();
             var key = Encoding.ASCII.GetBytes(appSettings.Secret);
+
             services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -136,6 +124,11 @@ namespace DziennikSportowca
         private void ConfigureApplicationServices(IServiceCollection services)
         {
             services.AddScoped<IUserSrv, UserSrv>();
+        }
+
+        private void ConfigureApplicationFacades(IServiceCollection services)
+        {
+
         }
     }
 }

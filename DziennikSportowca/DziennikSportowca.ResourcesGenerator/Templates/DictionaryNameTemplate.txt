@@ -1,0 +1,5 @@
+﻿IF NOT EXISTS (SELECT TOP 1 FROM [schDictinaries].[tDictionaryNames] WHERE [DictionaryId] = {0} AND [Culture] = '{1}')
+    BEGIN INSERT INTO [schDictinaries].[tDictionaryNames] ([Name], [Culture], [DictionaryId]) VALUES(N'{2}', '{1}', {0}) END 
+ELSE 
+    BEGIN UPDATE [schDictinaries].[tDictionaryNames] SET [Name] = N'{2}' WHERE [DictionaryId] = {0} AND [Culture] = '{1}' END
+

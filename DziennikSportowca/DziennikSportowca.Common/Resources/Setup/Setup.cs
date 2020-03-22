@@ -16,6 +16,7 @@ namespace DziennikSportowca.Common.Resources.Setup
                 .Select(x => new Dictionary()
                 {
                     DictionaryId = (int)x,
+                    DictionaryName = x.ToString(),
                     Names = GetDictionaryNames(x)
                 }).ToList();
 
@@ -32,7 +33,7 @@ namespace DziennikSportowca.Common.Resources.Setup
             {
                 foreach (var attribute in attributes)
                 {
-                    names.Add(new DictionaryName(ResourcesHelpers.GetString<Dictionaries>(attribute.Mapping.ToString(), culture), culture.ToString()));
+                    names.Add(new DictionaryName(ResourcesHelpers.GetString<Dictionaries>(attribute.Mapping.ToString(), culture), culture.ToString().ToUpper()));
                 }
             }
 

@@ -25,6 +25,7 @@ namespace DziennikSportowca.EntityFramework.Data
         }
 
         public DbSet<tDictionary> tDictionaries { get; set; }
+        public DbSet<tDictionaryName> tDictionaryNames { get; set; }
         public DbSet<tDictionaryItem> tDictionaryItems { get; set; }
         public DbSet<tDictionaryItemName> tDictionaryItemNames { get; set; }
 

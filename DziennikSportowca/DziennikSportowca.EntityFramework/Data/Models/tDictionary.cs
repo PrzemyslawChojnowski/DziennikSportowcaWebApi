@@ -13,6 +13,7 @@ namespace DziennikSportowca.EntityFramework.Data.Models
 
         public string Name { get; set; }
 
+        public virtual IList<tDictionaryItemName> Names { get; set; }
         public virtual IList<tDictionaryItem> DictionaryItems { get; set; }
     }
 }

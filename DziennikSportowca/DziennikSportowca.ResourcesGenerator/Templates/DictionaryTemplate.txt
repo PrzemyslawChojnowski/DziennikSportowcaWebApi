@@ -1,0 +1,5 @@
+﻿IF NOT EXISTS (SELECT TOP 1 FROM [schDictinaries].[tDictionaries] WHERE [Id] = {0})
+    BEGIN INSERT INTO [schDictinaries].[tDictionaries] VALUES({0}, N'{1}') END 
+ELSE
+    BEGIN UPDATE [schDictinaries].[tDictionaries] SET [Name] = N'{1}' WHERE [Id] = {0} END
+

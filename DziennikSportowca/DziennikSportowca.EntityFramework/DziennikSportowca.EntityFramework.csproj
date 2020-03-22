@@ -1,16 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="Setup\Dictionaries.sql">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Dictionaries.tt</DependentUpon>
-    </None>
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="8.1.1" />
@@ -20,13 +12,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DziennikSportowca.Interfaces.Services\DziennikSportowca.Interfaces.Services.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Setup\Dictionaries.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Dictionaries.sql</LastGenOutput>
-    </None>
   </ItemGroup>
 
   <ItemGroup>

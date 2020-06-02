@@ -1,7 +1,7 @@
-﻿using DziennikSportowca.EntityFramework.Data.Models;
+﻿using DziennikSportowca.Infrastructure.EntityFramework.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace DziennikSportowca.EntityFramework.Data
+namespace DziennikSportowca.Infrastructure.EntityFramework.Data
 {
     public class ApplicationDbContext : Microsoft.EntityFrameworkCore.DbContext
     {

@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace DziennikSportowca.EntityFramework.Data.Models
+namespace DziennikSportowca.Infrastructure.EntityFramework.Data.Models
 {
     [Table(nameof(tDictionary), Schema = SchemaNames.SchDictionaries)]
     public class tDictionaryItem

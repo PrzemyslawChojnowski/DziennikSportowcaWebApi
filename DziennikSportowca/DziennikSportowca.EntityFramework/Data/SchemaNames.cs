@@ -1,4 +1,4 @@
-﻿namespace DziennikSportowca.EntityFramework.Data
+﻿namespace DziennikSportowca.Infrastructure.EntityFramework.Data
 {
     public static class SchemaNames
     {

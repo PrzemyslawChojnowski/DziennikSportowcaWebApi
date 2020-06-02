@@ -1,9 +1,9 @@
 ﻿using DziennikSportowca.AppStart;
 using DziennikSportowca.Common.MappingProfiles;
 using DziennikSportowca.Common.Models.Settings;
-using DziennikSportowca.EntityFramework.Data;
-using DziennikSportowca.EntityFramework.Data.MappingProfiles;
-using DziennikSportowca.EntityFramework.Services;
+using DziennikSportowca.Infrastructure.EntityFramework.Data;
+using DziennikSportowca.Infrastructure.EntityFramework.Data.MappingProfiles;
+using DziennikSportowca.Infrastructure.EntityFramework.Services;
 using DziennikSportowca.Interfaces.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;

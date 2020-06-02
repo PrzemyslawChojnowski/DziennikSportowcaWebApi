@@ -1,15 +1,15 @@
 ﻿using AutoMapper;
 using DziennikSportowca.Common.Exceptions;
 using DziennikSportowca.Common.Models.User;
-using DziennikSportowca.EntityFramework.Data;
-using DziennikSportowca.EntityFramework.Data.Models;
+using DziennikSportowca.Infrastructure.EntityFramework.Data;
+using DziennikSportowca.Infrastructure.EntityFramework.Data.Models;
 using DziennikSportowca.Interfaces.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DziennikSportowca.EntityFramework.Services
+namespace DziennikSportowca.Infrastructure.EntityFramework.Services
 {
     public class UserSrv : BaseSrv, IUserSrv
     {

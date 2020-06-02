@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DziennikSportowca", "Dzienn
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{894AD776-227A-44C8-A532-96E3CDDC36F5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFramework", "EntityFramework", "{A846DE43-243F-4665-834A-CAB1E0D1819D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{A846DE43-243F-4665-834A-CAB1E0D1819D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{451B0E27-1BDB-4562-9DD1-DE4969912D51}"
 EndProject
@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DziennikSportowca.Common", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DziennikSportowca.ResourcesGenerator", "DziennikSportowca.ResourcesGenerator\DziennikSportowca.ResourcesGenerator.csproj", "{FBA9CA16-48BB-481F-AC76-F9816447ED77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DziennikSportowca.Logger", "DziennikSportowca.Logger\DziennikSportowca.Logger.csproj", "{07BBE705-83B1-461B-BAE6-A0C6DEB35B15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DziennikSportowca.Logger", "DziennikSportowca.Logger\DziennikSportowca.Logger.csproj", "{07BBE705-83B1-461B-BAE6-A0C6DEB35B15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

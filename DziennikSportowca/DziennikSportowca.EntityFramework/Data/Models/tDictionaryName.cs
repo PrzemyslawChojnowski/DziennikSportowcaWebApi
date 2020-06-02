@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace DziennikSportowca.EntityFramework.Data.Models
+namespace DziennikSportowca.Infrastructure.EntityFramework.Data.Models
 {
     [Table(nameof(tDictionaryName), Schema = SchemaNames.SchDictionaries)]
     public class tDictionaryName

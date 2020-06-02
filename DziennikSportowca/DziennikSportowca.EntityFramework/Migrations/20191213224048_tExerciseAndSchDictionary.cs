@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace DziennikSportowca.EntityFramework.Migrations
+namespace DziennikSportowca.Infrastructure.EntityFramework.Migrations
 {
     public partial class tExerciseAndSchDictionary : Migration
     {

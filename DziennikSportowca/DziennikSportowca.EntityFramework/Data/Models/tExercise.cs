@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace DziennikSportowca.EntityFramework.Data.Models
+namespace DziennikSportowca.Infrastructure.EntityFramework.Data.Models
 {
     [Table(nameof(tExercise), Schema = SchemaNames.SchExercise)]
     public class tExercise

@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using DziennikSportowca.EntityFramework.Data;
+using DziennikSportowca.Infrastructure.EntityFramework.Data;
 
-namespace DziennikSportowca.EntityFramework.Services
+namespace DziennikSportowca.Infrastructure.EntityFramework.Services
 {
     public class BaseSrv
     {

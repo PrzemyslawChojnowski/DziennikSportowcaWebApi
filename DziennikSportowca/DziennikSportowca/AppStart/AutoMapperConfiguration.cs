@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using DziennikSportowca.Common.MappingProfiles;
-using DziennikSportowca.EntityFramework.Data.MappingProfiles;
+using DziennikSportowca.Infrastructure.EntityFramework.Data.MappingProfiles;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
 using DziennikSportowca.Common.Models.User;
-using DziennikSportowca.EntityFramework.Data.Models;
+using DziennikSportowca.Infrastructure.EntityFramework.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DziennikSportowca.EntityFramework.Data.MappingProfiles
+namespace DziennikSportowca.Infrastructure.EntityFramework.Data.MappingProfiles
 {
     public class UserMappingProfile : Profile
     {
